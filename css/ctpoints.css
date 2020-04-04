@@ -173,7 +173,9 @@ border-width: 0px;
 
 
 /****************  Rheumatology page content  *****************************/
-
+#rheumpage {
+	overflow: scroll;
+}
 #rheumpage .titleblock{background:url(../images/rheumhexsmall.png) 20px 12px no-repeat;}
 #rheumpage .contentbox{width:680px; height:394px; padding:50px;line-height:50px;}
 
