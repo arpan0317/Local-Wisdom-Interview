@@ -1,0 +1,243 @@
+@import "../fonts/fonts-min.css";
+/*global styles*/
+html { width: 1024px; height: 768px; margin:0 auto;}
+body {
+	margin:0px; padding:0;
+    width: 1024px;
+    height: 768px;
+    
+    overflow: hidden;
+	font-size:18px;
+	color:#4a4948;
+    -webkit-font-smoothing: antialiased; /* for desktop safari testing */
+    -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit – not sure if we need this one*/
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+.container {
+	overflow: hidden;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);;
+	width: 1024px; height: 768px;
+	position: relative;
+	-webkit-transform : translate3d(0,0,0); 
+	margin: 0px;padding: 0px;
+	top:0px;left:0px;
+	background:url(../images/bg_main.png) 0 0 repeat-x;
+}
+
+.header{
+	width:100%;
+	height:106px;
+	background: url(../images/header.jpg) 0 0 repeat-x;
+}
+
+.header .title, .header .titleright{margin-top:22px;}
+.header .titleblock{float:left; padding-left:107px; padding-top:22px; font-size:24px; height:106px;}
+h3 { font-weight:bold; font-family: 'MyriadSemibold';}
+.titleblock h3{font-size:30px; margin:0; padding:0;}
+.titleright{float:right; margin-right:28px;}
+
+div{font-family: 'MyriadLightIt'}
+
+.content {width:100%; height:662px;position: relative}
+.contentbox{width:780px; height:494px; background:#e6dfc1; margin:64px 119px 0px;-moz-border-radius: 8px; border-radius: 8px;position:relative;}
+
+.clear{ font-size: 1px; line-height: 1px; margin: 0px; padding: 0px; clear: both; }
+.left{float:left;}
+.right{float:right;}
+
+
+/****************  bottom nav   *****************************/
+.bottom_nav{
+	position: absolute;
+	bottom: 0px;
+}
+.bottom_nav_button{
+	background-color: black;
+	color: white;
+	border-width: 0px;
+	border-radius: 5px 5px 0px 0px;
+	font-family: 'MyriadSemibold';
+	font-size: 18px;
+}
+.bottom_nav_button:hover{
+	color: #e6dfc1;
+}
+#bottom_home{
+	position: absolute;
+	height: 50px;
+	vertical-align: bottom;
+	left: 100px;
+	bottom: 0px;
+
+}
+#home_icon{
+	margin-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#bottom_SOC{
+	position: absolute;
+	height: 50px;
+	left: 500px;
+	bottom: 0px;
+	width: 180px;
+}
+#bottom_rheum{
+	position: absolute;
+	height: 50px;
+	left: 240px;
+	bottom: 0px;
+	padding-left: 25px;
+	padding-right: 25px;
+	width: 180px;
+}
+#bottom_gastro{
+	position: absolute;
+	height: 50px;
+	left: 750px;
+	bottom: 0px;
+}
+.ref_button {
+	position: absolute;
+	left: 400px;
+	top: 400px;
+}
+#ref_button_rheum{
+	background-image: url("../images/ref_button.png");
+	background-size: cover;
+	width: 225px;
+	height: 50px;
+	border-width: 0px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	font-family: 'MyriadLightIt';
+	font-size: 24px;
+}
+/****************  home page content  *****************************/
+
+#homepage .header{text-align:center;}
+#homepage {background: url("../images/bg_people.png");}
+
+.hex{ position:absolute; text-align:center;}
+/*.hex h3{ margin:112px 10px 0px; display:block;}
+/*#rheumhex{ left:60px; top:20px;}
+#SOChex{left:380px; top:152px;}
+#gastrohex{left:700px; top:75px;}*/
+.index_btn{
+position: absolute;
+height: 250px;
+width: 220px;
+background: transparent;
+border-width: 0px;
+}
+#rheumbutton{
+	top: 35px;
+	left: 100px;
+	background-image: url("../images/rheumhex.png");
+	background-size: cover;
+}
+#rheumhex{
+	position: absolute;
+	left: 45px;
+	top: 70px;
+	font-size: 18px;
+}
+#SOCbutton{
+	top: 150px;
+	left: 420px;
+	background-image: url("../images/gastrohex.png");
+	background-size: cover;
+}
+#SOChex{
+	position: absolute;
+	left: 40px;
+	top: 60px;
+	font-size: 18px;
+}
+#gastrobutton{
+	top: 92px;
+	left: 740px;
+	background-image: url("../images/SOChex.png");
+	background-size: cover;
+}
+#gastrohex{
+	position: absolute;
+	left: 35px;
+	top: 60px;
+	font-size: 18px;
+}
+
+
+
+/****************  Rheumatology page content  *****************************/
+
+#rheumpage .titleblock{background:url(../images/rheumhexsmall.png) 20px 12px no-repeat;}
+#rheumpage .contentbox{width:680px; height:394px; padding:50px;line-height:50px;}
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 170px;
+	top: 110px;
+}
+.rheumpopup {
+	box-shadow: 10px 10px 15px grey;
+	border-radius: 10px;
+}
+
+.close {
+	position: fixed;
+	right: 170px;
+	top: 100px;
+  	font-size: 28px;
+  	font-weight: bold;
+}
+
+
+/****************  SOC page content  *****************************/
+#socpage .titleblock{background:url(../images/SOChexsmall.png) 20px 12px no-repeat;}
+#socpage .contentbox { width:780px; height:494px;}
+#socpage .contentbox hr{color:#4a4948; background-color:#4a4948; height:1px;border:0;margin-top:-20px;margin-right: 25px; margin-left: 25px;}
+#soc_contentTitle{
+	font-family: 'MyriadSemibold';
+	margin-left: 25px;
+	padding-top: 5px;
+	font-size: 24px; 	
+}
+#soc_shapes{
+	margin-left: 50px;
+	padding-top: 25px;
+}
+#soc_txt{
+	position: absolute;
+	left: 100px;
+	top: 120px;
+}
+
+/****************  Gastroenterology page content  *****************************/
+#gastropage .titleblock{background:url(../images/gastrohexsmall.png) 20px 12px no-repeat;}
+#gastropage .contentbox div{height:460px; margin-top:34px;}
+#gastropage .contentbox .left{
+	width:250px;
+	margin-left:32px;
+	font-family: 'MyriadSemibold';
+	font-size: 24px;
+	margin-top: 15px;
+}
+.contentbox .right{
+	position: fixed;
+	top: 150px;
+	left: 400px;
+	margin-right: 160px;
+	overflow: hidden;
+}
+#gastro_people{
+	position: absolute;
+	bottom: 0px;
+	left: 32px;
+}
+
