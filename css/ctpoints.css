@@ -119,7 +119,7 @@ div{font-family: 'MyriadLightIt'}
 /****************  home page content  *****************************/
 
 #homepage .header{text-align:center;}
-#homepage {background: url("../images/bg_people.png");}
+#homepage {background: url("../images/bg_people.png");overflow: scroll;}
 
 .hex{ position:absolute; text-align:center;}
 /*.hex h3{ margin:112px 10px 0px; display:block;}
